@@ -7,6 +7,7 @@
 <meta name="keywords" content="SP Tech Studios, Flutter, Android Developer">
 <meta name="theme-color" content="#0f172a">
 <title>SP Tech Studios</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:Arial,Helvetica,sans-serif;background:#0f172a;color:#f8fafc;line-height:1.7}
@@ -19,7 +20,8 @@ nav a:hover{color:#38bdf8}
 .hero h1{font-size:48px;margin-bottom:20px}
 .hero p{max-width:760px;margin:auto;color:#cbd5e1;font-size:18px}
 .btns{margin-top:35px}
-.btn{display:inline-block;padding:12px 26px;border-radius:8px;text-decoration:none;font-weight:bold;margin:8px}
+.btn{display:inline-block;padding:12px 26px;border-radius:8px;text-decoration:none;font-weight:bold;margin:8px;transition:0.3s;}
+.btn:hover{opacity:0.8;}
 .primary{background:#2563eb;color:#fff}
 .secondary{border:1px solid #38bdf8;color:#38bdf8}
 section{max-width:1100px;margin:auto;padding:70px 20px}
@@ -28,8 +30,33 @@ h2{text-align:center;font-size:34px;margin-bottom:20px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:40px}
 .card{background:#111827;padding:25px;border-radius:12px;border:1px solid #1f2937}
 .card h3{margin-bottom:10px;color:#38bdf8}
+
+/* Contact & Social Media Icon Styles */
 .contact{text-align:center}
 .contact a{color:#38bdf8;text-decoration:none}
+.social-links {display: flex; justify-content: center; gap: 20px; margin-top: 25px;}
+.social-btn {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    text-decoration: none; 
+    color: #fff; 
+    font-size: 24px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+.social-btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+.playstore {background: #00c853;}
+.youtube {background: #ff0000;}
+.instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
 footer{background:#111827;padding:25px;text-align:center;color:#94a3b8;margin-top:50px}
 @media(max-width:700px){
 .hero h1{font-size:34px}
@@ -97,16 +124,18 @@ nav a{margin:0 8px}
 </section>
 
 <section id="contact" class="contact">
-<h2>Contact</h2>
+<h2>Contact & Connect</h2>
 <p><strong>SP Tech Studios</strong></p>
 <p>Email:</p>
-<p><a href="mailto:sptechstudios@gmail.com">support.sptechstudios@gmail.com</a></p>
-  <div class="social-links">
+<p><a href="mailto:support.sptechstudios@gmail.com">support.sptechstudios@gmail.com</a></p>
+
+<div class="social-links">
     <a href="https://play.google.com/store/apps/dev?id=5312099243573327384" target="_blank" class="social-btn playstore" aria-label="Google Play"><i class="fa-brands fa-google-play"></i></a>
     <a href="https://youtube.com/@sp_tech_studios?si=kW2unnFnPJSuOqvY" target="_blank" class="social-btn youtube" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
     <a href="https://www.instagram.com/sptechstudios?utm_source=qr&igsi=MXdnaW9zM3QzeHNhYQ==" target="_blank" class="social-btn instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
 </div>
-<p style="margin-top:20px">App pages will be added here soon.</p>
+
+<p style="margin-top:30px">App pages will be added here soon.</p>
 </section>
 
 <footer>
